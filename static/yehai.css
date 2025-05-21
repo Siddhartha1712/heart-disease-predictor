@@ -1,0 +1,121 @@
+body{
+    background-color:rgb(22, 22, 22);
+    text-align: center;
+}
+h1{
+    color:rgb(178, 45, 45);
+    text-shadow: 0px 0px 3px rgb(35, 35, 35);
+}
+#div1{
+    background-color:rgb(111, 111, 111);
+    margin: 20px;
+    width: 450px;
+    height: 500px;
+    margin:auto;
+    overflow: auto;
+    padding:20px;
+}
+button{
+    background-color:rgb(109, 122, 196);
+    margin:20px;
+    padding: 5px;
+}
+button:hover{
+    background-color:rgb(39, 96, 230);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#long1 :hover{
+    background-color: rgb(196, 196, 196);
+}
+.form-group #col_id {
+    min-width: 200px; /* Adjust as needed */
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 0px 0px 1px rgb(45, 47, 58);
+    /*max-width: 100px;*/
+}
+.form-group-radio #col_id {
+    min-width: 200px; /* Adjust as needed */
+    font-weight: bold;
+    font-size: large;
+    display: block;
+    width:200px;
+    text-shadow: 0px 0px 1px rgb(45, 47, 58);
+    max-width: 200px;
+}
+.form-group input {
+    flex: 1;
+    background-color: rgb(66, 65, 65);
+    color:rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top:10px;
+    width:50px;
+    height: 25px;
+    max-width: 145px;
+    margin-left:20px;
+}
+.form-group-radio {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-group-radio #sex{
+   min-width: 180px; /* Adjust as needed */
+   font-weight: bold;
+    font-size: large;
+    text-shadow: 0px 0px 1px rgb(45, 47, 58);
+
+}
+.form-group select{
+    flex: 1;
+    background-color: rgb(66, 65, 65);
+    color:rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top:12px;
+    width:50px;
+    height: 25px;
+    max-width: 150px;
+    margin-left:20px;
+}
+#mafe{
+    margin-left:5px;
+}
+#cpt{
+    margin-left:5px;
+}
+
+.form-group option{
+    background-color: rgb(63, 63, 63);
+    color:rgb(0, 0, 0);
+
+}
+select :hover{
+    background-color: rgb(184, 205, 232);
+}
+h2{
+    color:rgb(12, 108, 177);
+    text-shadow: 0px 0px 3px rgb(35, 35, 35);
+}
+p{
+    color:white;
+    text-shadow: 0px 0px 3px rgb(35, 35, 35);
+    font-weight: bold;
+    font-size: large;
+}
+#tp{
+    width:80em;
+    margin:auto;
+}
+.centered{
+    position: absolute;
+    top: 40%;         
+    left: 50%;              
+    transform: translate(-50%, -50%);
+}

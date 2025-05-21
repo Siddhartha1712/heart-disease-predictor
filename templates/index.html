@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='yehai.css')}}">
+</head>
+<body>
+    <h1 id="heading1">Heart Disease Predictor</h1>
+    <div id="div1">
+        <h3>Enter the Following Details</h3>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="age" id="col_id">Age:</label>
+                <input type="number" class="long1" name="age" id="age" min="10" max="120" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sex" id="col_id">Sex:</label>
+                <select name="sex" id="sex" class="long1" required>
+                    <option value="1">Male(1)</option>
+                    <option value="0">Female(0)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cp" id="col_id">Chest Pain Type:</label>
+                <select name="cp" id="cp" class="long1" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="restBps" id="col_id">Resting Bp:</label>
+                <input type="number" class="long1" name="restBps" id="restBps" required>
+            </div>
+
+            <div class="form-group">
+                <label for="chestPressure" id="col_id">Serum Cholesterol:</label>
+                <input type="number" class="long1" name="cholesterol" id="chestPressure" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fastBps" id="col_id">Blood sugar (mg/dL):</label>
+                <input type="number" class="long1" name="fastBps" id="fastBps" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ecg" id="col_id">Resting ECG:</label>
+                <select name="ecg" id="ecg" class="long1" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="maxhr" id="col_id">Max Heart Rate:</label>
+                <input type="number" class="long1" name="maxhr" id="maxhr" required>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="excang" id="col_id">Exercise-Induced Angina:</label>
+                <select name="excang" id="excang" class="long1" required>
+                    <option value="0">No(0)</option>
+                    <option value="1">Yes(1)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <label for="std" id="col_id">ST depression:</label>
+              <input type="number" step="0.01" class="long1" name="std" id="std" required>
+            </div>
+
+          <div class="form-group">
+            <label for="slope" id="col_id">Slope of Peak Excercise:</label>
+              <select name="slope" id="slope" class="long1" required>
+                  <option value="0">upsloping(0)</option>
+                  <option value="1">flat(1)</option>
+                  <option value="2">DownSloping(2)</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label for="no_v" id="col_id">Number of major Vessels:</label>
+              <select name="no_v" id="no_v" class="long1" required>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label for="thal" id="col_id">Thalassemia :</label>
+              <select name="thal" id="thal" class="long1" required>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">0</option>
+              </select>
+          </div>
+
+            <button id="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
